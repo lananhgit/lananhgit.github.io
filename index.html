@@ -1,1 +1,379 @@
-Hello
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Lan Anh</title>
+  <meta name="description" content="Portfolio cá nhân của Lan Anh - Giới thiệu bản thân, kỹ năng và kinh nghiệm.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h2 {
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      background: #0f172a;
+      color: white;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #60a5fa;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 550px;
+      margin-bottom: 25px;
+    }
+
+    .avatar {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: #334155;
+      border: 5px solid #60a5fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 65px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      color: #0f172a;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.05);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .skill {
+      margin-bottom: 18px;
+    }
+
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
+    .progress {
+      height: 9px;
+      background: #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      background: #3b82f6;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 6%;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <h2>Lan Anh.</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+      <h1>Xin chào, mình là <span>Lan Anh</span></h1>
+      <h3>Personal Portfolio | Job Seeker</h3>
+      <p>
+        Tôi là người luôn mong muốn học hỏi, phát triển bản thân
+        và tạo ra những giá trị tích cực trong công việc.
+        Chào mừng bạn đến với portfolio của tôi!
+      </p>
+      <a href="#contact" class="btn">Liên hệ với tôi</a>
+      <a href="cv.pdf" class="btn" download>Tải CV</a>
+    </div>
+
+    <div class="avatar">LA</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        Xin chào! Tôi là Lan Anh. Tôi yêu thích việc khám phá
+        kiến thức mới, phát triển kỹ năng và làm việc trong
+        môi trường chuyên nghiệp.
+      </p>
+      <p>
+        Mục tiêu của tôi là không ngừng hoàn thiện bản thân,
+        đóng góp năng lực và phát triển lâu dài cùng doanh nghiệp.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>💻 Technical Skills</h3>
+
+        <div class="skill">
+          <div class="skill-name">
+            <span>Microsoft Office</span>
+            <span>80%</span>
+          </div>
+          <div class="progress"><span style="width:80%"></span></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">
+            <span>HTML & CSS</span>
+            <span>70%</span>
+          </div>
+          <div class="progress"><span style="width:70%"></span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🌟 Soft Skills</h3>
+        <p>• Giao tiếp</p>
+        <p>• Làm việc nhóm</p>
+        <p>• Quản lý thời gian</p>
+        <p>• Giải quyết vấn đề</p>
+        <p>• Tư duy sáng tạo</p>
+      </div>
+
+      <div class="card">
+        <h3>🌐 Languages</h3>
+        <p>Tiếng Việt: Bản ngữ</p>
+        <p>Tiếng Anh: Đang cập nhật</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title">Education & Experience</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🎓 Education</h3>
+        <p>Trường: [Tên trường]</p>
+        <p>Chuyên ngành: [Chuyên ngành]</p>
+        <p>Thời gian: [2022 - 2026]</p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Experience</h3>
+        <p>Vị trí: [Tên công việc]</p>
+        <p>Công ty: [Tên công ty]</p>
+        <p>Thời gian: [Thời gian làm việc]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project 01</h3>
+        <p>[Tên dự án cá nhân]</p>
+        <p>Mô tả ngắn về dự án và vai trò của bạn.</p>
+      </div>
+
+      <div class="card">
+        <h3>Project 02</h3>
+        <p>[Tên dự án học tập]</p>
+        <p>Mô tả kết quả và kỹ năng bạn đã sử dụng.</p>
+      </div>
+
+      <div class="card">
+        <h3>Certificate</h3>
+        <p>[Tên chứng chỉ hoặc thành tích]</p>
+        <p>[Đơn vị cấp và năm đạt được]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+    <p>GitHub:
+      <a href="https://github.com/lananhgit" target="_blank">
+        github.com/lananhgit
+      </a>
+    </p>
+    <p>Phone: [Số điện thoại]</p>
+    <br>
+    <a href="mailto:yourmail@gmail.com" class="btn">Send Email</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Lan Anh | Personal Portfolio</p>
+    <p>Designed with ❤️ by Lan Anh</p>
+  </footer>
+
+</body>
+</html>
